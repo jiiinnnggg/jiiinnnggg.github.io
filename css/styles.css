@@ -7,7 +7,11 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 #map {
-height: calc(100% - 45px);
+height: calc(100% - 60px);
+}
+
+#show-sidebar {
+	padding: 6px;
 }
 
 #sidebar {
@@ -29,10 +33,6 @@ height: calc(100% - 45px);
     #sidebar.active {
         margin-left: 10px;
     }
-    #search-results {
-    	min-height: calc(95% - 280px);
-		max-height: calc(95% - 280px);
-    }
 }
 
 #sidebar-top-area {
@@ -43,8 +43,8 @@ height: calc(100% - 45px);
 
 #search-results {
 	overflow: scroll;
-	min-height: calc(95% - 220px);
-	max-height: calc(95% - 220px);
+	min-height: calc(95% - 280px);
+	max-height: calc(95% - 280px);
 	padding-right: 14px;
 	font-size: 14px;
 }
@@ -54,5 +54,5 @@ height: calc(100% - 45px);
 }
 
 #hamburger-icon {
-	height: 20px;
+	height: 24px;
 }
