@@ -1,1 +1,66 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+    <meta name="Neighborhood Map Project | Jing Sun">
+
+    <title>Udacity Map Project | US National Parks</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <!-- Sidebar -->
+            <div class="col-2" id="sidebar">
+                <div id="sidebar-top-area">
+                    <h4>US National Parks</h4>
+                    <hr>
+                    <form class="form-group">
+                        <input class="form-control" type="text" placeholder="Search Name..." data-bind="textInput: query">
+                        <hr>
+                        <label>Select a state or territory:</label>
+                        <select class="form-control" data-bind="options: statesList, value: selectedState"></select>
+                    </form>
+                    <hr>
+                </div>
+
+                <ul class="list-group" data-bind="foreach: filteredList" id="search-results">
+                    <a href="#">
+                        <li class="list-group-item" data-bind="text: name, click: $parent.makeMarker"></li>
+                    </a>
+                </ul>
+            </div>
+
+            <!-- Map Pane -->
+            <div class="col" id="map-pane">
+                <nav class="navbar navbar-light bg-light" id="nav-header">
+                    <a href="#">
+                        <img src="img/ham.svg" alt="img" id="hamburger-icon">
+                    </a>
+                </nav>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/mapStyles.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAa60YjfQ8skiVYUcLUI7tVJKTQPsUV_Og&callback=runApp"
+        onerror="googMapsError()">
+    </script>
+</body>
+</html>
