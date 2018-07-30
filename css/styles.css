@@ -29,6 +29,10 @@ height: calc(100% - 45px);
     #sidebar.active {
         margin-left: 10px;
     }
+    #search-results {
+    	min-height: calc(95% - 280px);
+		max-height: calc(95% - 280px);
+    }
 }
 
 #sidebar-top-area {
