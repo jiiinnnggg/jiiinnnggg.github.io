@@ -41,6 +41,7 @@ height: calc(100% - 45px);
 	overflow: scroll;
 	min-height: calc(95% - 220px);
 	max-height: calc(95% - 220px);
+	padding-right: 14px;
 	font-size: 14px;
 }
 
