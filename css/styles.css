@@ -27,7 +27,7 @@ height: calc(100% - 45px);
         margin-left: -270px;
     }
     #sidebar.active {
-        margin-left: 0;
+        margin-left: 10px;
     }
 }
 
