@@ -39,8 +39,8 @@ height: calc(100% - 45px);
 
 #search-results {
 	overflow: scroll;
-	min-height: calc(95% - 200px);
-	max-height: calc(95% - 200px);
+	min-height: calc(95% - 220px);
+	max-height: calc(95% - 220px);
 	font-size: 14px;
 }
 
